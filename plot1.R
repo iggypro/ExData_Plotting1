@@ -1,4 +1,5 @@
 ## Exploratory Data Analysis - Course Project 1
+<<<<<<< HEAD
 ## Plot1 script - June 6th, 2014
 
 ## Reading data from "Electric Power Consumption" source
@@ -13,3 +14,6 @@ createPlot1 <- function()
 {
   
 }
+=======
+## Plot1 script - June 6th, 2014
+>>>>>>> FETCH_HEAD
