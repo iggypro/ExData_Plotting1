@@ -21,8 +21,13 @@ readData <- function(path, startDate="01/02/2007", endDate="02/02/2007")
 
 ## Creating a plot similar to
 ## https://github.com/iggypro/ExData_Plotting1/blob/master/figure/unnamed-chunk-2.png
-createPlot1 <- function()
+createPlot1 <- function(path, startDate="01/02/2007", endDate="02/02/2007")
 {
-  
+  if(!file.exists(path)) return ("Data file doesn't exist")
+  data <- readData(path,startDate,endDate)
+  png("plot1.png")
+  hist(data$V3,col="red",main="Global Active Power",xlab="Global Active Power (kilowatts)")
+  dev.off()
+  return("Plot1 has been saved to plot1.png in your working directory")
 }
 
